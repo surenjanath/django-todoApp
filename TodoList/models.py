@@ -6,7 +6,7 @@ from django.db import models
 # LogEntry.objects.all().delete()
 
 # Create your models here.
-class Task(models.Model):
+class TodoTask(models.Model):
     text        = models.CharField(max_length = 45)
     completed   = models.BooleanField(default = False)
 
